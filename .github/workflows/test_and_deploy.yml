@@ -19,7 +19,7 @@ jobs:
         run: |
           black ./ --check
           flake8
-          mypy my_project
+          mypy python_package_plaw
   test:
     needs: lint
     runs-on: ${{ matrix.os }}
